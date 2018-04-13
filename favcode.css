@@ -1,18 +1,18 @@
 /* @font-face{
 	font-family:'Padaloma';
-	src:url(Italics/Padaloma.ttf);*/
-}
- a {
+	src:url(Italics/Padaloma.ttf);
+}*/
+a {
   display: flex;
   align-items: center;
 }
 a:before,
 a:after {
-  flex: 1;
-  content: '';
-  height: 1px;
-  background: grey;
-  font-weight: bolder;
+	flex: 1;
+  	content: '';
+ 	height: 1px;
+  	background: grey;
+  	font-weight: bolder;
 }
 img{
 	border: 5px solid white;
@@ -20,6 +20,7 @@ img{
 	height: 200px;
 	width: 200px;
 }
+
 .hope{
 	text-align: center;
 	width:400px;
@@ -27,8 +28,6 @@ img{
 	float: center; 
 	margin-left:450px;
 	background-color:#ffffff; 
-
-
 }
 body{
 	background-image:url(images/top_view.jpg);
@@ -59,4 +58,33 @@ h1{
 }
 .fa-instagram,.fa-facebook,.fa-twitter,.fa-github,.fa-google-plus-g{
 color: #546e7a;
+}
+
+
+.imagaspan {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+.imagespan:before, 
+.imagespan:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 50%;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.imagespan:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.imagespan:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+img {
+  vertical-align: middle;
 }
